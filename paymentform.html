@@ -13,14 +13,15 @@
     <main class="main-container">
         <div class="watermark-bg"></div> 
 
-	<div class="payment-gateway">
+        <div class="payment-gateway">
             <img src="qrcode.png" alt="QR Code">         
             
             <form action="confirmation.html" method="post" class="transaction-form">
                 <label for="transaction-code" class="form-label">Enter Transaction Code:</label>
                 <input type="text" id="transaction-code" name="transaction-code" class="form-input" required>
                 <div class="button-container">
-                    <input type="submit" value="Submit" class="button">
+                    <!-- Use a button with a link to the confirmation page -->
+                    <button type="button" class="button" onclick="redirectToConfirmation()">Submit</button>
                 </div>
             </form>
         </div>
@@ -31,5 +32,12 @@
             <p>Your support enables us to deliver a fantastic event. Thank you!</p>
         </div>
     </main>
+    
+    <!-- Add a JavaScript function to redirect to the confirmation page -->
+    <script>
+        function redirectToConfirmation() {
+            window.location.href = 'confirmation.html';
+        }
+    </script>
 </body>
 </html>
