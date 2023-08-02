@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="event-name">Payment</h1>
+    </header>
+    
+    <main class="main-container">
+        <div class="watermark-bg"></div> 
+
+	<div class="payment-gateway">
+            <img src="qrcode.png" alt="QR Code">         
+            
+            <form action="confirmation.html" method="post" class="transaction-form">
+                <label for="transaction-code" class="form-label">Enter Transaction Code:</label>
+                <input type="text" id="transaction-code" name="transaction-code" class="form-input" required>
+                <div class="button-container">
+                    <input type="submit" value="Submit" class="button">
+                </div>
+            </form>
+        </div>
+
+        <div class="charge-message">
+            <p>We appreciate your cooperation!</p>
+            <p>To provide you with the best event experience, a minimal charge of <strong>Rs. 129</strong> applies.</p>
+            <p>Your support enables us to deliver a fantastic event. Thank you!</p>
+        </div>
+    </main>
+</body>
+</html>

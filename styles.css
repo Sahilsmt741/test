@@ -1,0 +1,116 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101820FF;
+    color: #fff;
+}
+
+.event-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+
+header {
+    background-color: #00B1D2FF;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main img {
+    width: auto;
+    height: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #00B1D2FF;
+    color: #fff;
+    padding: 30px 60px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px; /* Add spacing between label and input */
+    color: #FFFFFF;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px; /* Add more spacing between input groups */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #555;
+    opacity: 50%;
+    background-color: #f0f0f0; /* Add a light gray background */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Add spacing between input groups */
+}
+
+.watermark-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('watermark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1; /* Adjust the opacity of the background */
+    z-index: -1; /* Place the background behind other content */
+}

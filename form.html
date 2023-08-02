@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="event-name">Welcome to the Most Hyped Event</h1>
+        <p class="event-name">Date and Time: 06/08/2023 12:00 PM</p>
+        <p class="event-name">Address: Phoenix Market City</p>
+    </header>
+    
+    <main class="main-container">
+        <div class="watermark-bg"></div>
+        <form action="paymentform.html" method="get" class="form-container">
+            <div class="input-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="mobile" class="form-label">Mobile No.:</label>
+                <input type="tel" id="mobile" name="mobile" class="form-input" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="email" class="form-label">Email ID:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            
+            <div class="button-container">
+                <input type="submit" value="Submit and Pay" class="button">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
